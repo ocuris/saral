@@ -1,0 +1,15 @@
+# These are supported funding model platforms
+
+github: ["ocuris"]          # GitHub Sponsors account (replace with actual if available)
+patreon: "ocuris"           # Patreon username
+open_collective: "saral"    # Open Collective project
+ko_fi: "ocuris"             # Ko-fi username
+tidelift: ""                # Not applicable for now
+community_bridge: ""        # Not used yet
+liberapay: "ocuris"         # Liberapay username
+issuehunt: ""               # Not used
+lfx_crowdfunding: ""        # Not used
+polar: ""                   # Not used
+buy_me_a_coffee: "ocuris"   # BuyMeACoffee username
+thanks_dev: ""              # Not used
+# custom: ["https://ocuris.org/donate", "https://saran.ocuris.org/support"]
