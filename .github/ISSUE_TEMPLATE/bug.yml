@@ -1,0 +1,78 @@
+name: Bug Report
+description: Create a bug report to help us improve Saral
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🙏 Thanks for taking the time to report a bug in **Saral**!
+        Please provide as much detail as possible so we can investigate and fix the issue quickly.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what went wrong…
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Run `uv sync`
+        2. Open notebook "Chapter-01"
+        3. Execute the first cell
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: I expected the notebook to run successfully without errors.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📦 Environment
+        Please share details about your setup.
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: ex. Ubuntu Linux 22.04 / macOS 14 / Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      placeholder: ex. 3.12.3
+    validations:
+      required: true
+
+  - type: input
+    id: saral-version
+    attributes:
+      label: Saral Version
+      placeholder: ex. 0.1.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs / Screenshots
+      description: Paste any error messages, stack traces, or screenshots that could help us debug.
+      placeholder: Copy-paste error logs here…
