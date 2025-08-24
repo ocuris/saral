@@ -1,0 +1,158 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 📘 पायथन सीखें – आसान भाषा में\n",
+    "## अध्याय 48: Python और Data Visualization – matplotlib और seaborn basics"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### कहानी\n",
+    "राम अपनी shop के sales data को visually analyze करना चाहता था।\n",
+    "श्याम ने कहा:\n",
+    "> \"Python में matplotlib और seaborn से data को graphs और charts में आसानी से दिखा सकते हो।\"\n",
+    "\n",
+    "राम:\n",
+    "> \"वाह! अब मैं trends और patterns जल्दी समझ सकता हूँ।\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### matplotlib क्या है?\n",
+    "- Python की popular visualization library\n",
+    "- Line plot, bar chart, scatter plot आदि बनाती है\n",
+    "- Low-level control, customizable plots"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Example 1: Simple Line Plot\n",
+    "```python\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "x = [1, 2, 3, 4, 5]\n",
+    "y = [10, 15, 13, 18, 16]\n",
+    "\n",
+    "plt.plot(x, y, marker='o', color='blue')\n",
+    "plt.title('Sales Trend')\n",
+    "plt.xlabel('Day')\n",
+    "plt.ylabel('Sales')\n",
+    "plt.show()\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### seaborn क्या है?\n",
+    "- High-level statistical visualization library\n",
+    "- matplotlib पर built-in styling और plots provide करता है\n",
+    "- Bar plots, box plots, heatmaps, pairplots आसानी से बनाते हैं"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Example 2: Bar Plot with seaborn\n",
+    "```python\n",
+    "import seaborn as sns\n",
+    "import pandas as pd\n",
+    "\n",
+    "data = pd.DataFrame({\n",
+    "    'Product': ['Wheat', 'Rice', 'Sugar', 'Oil'],\n",
+    "    'Sales': [100, 150, 80, 120]\n",
+    "})\n",
+    "\n",
+    "sns.barplot(x='Product', y='Sales', data=data)\n",
+    "plt.title('Product Sales')\n",
+    "plt.show()\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Example 3: Scatter Plot with seaborn\n",
+    "```python\n",
+    "data = pd.DataFrame({\n",
+    "    'Day': [1, 2, 3, 4, 5],\n",
+    "    'Sales': [10, 15, 13, 18, 16],\n",
+    "    'Profit': [5, 7, 6, 9, 8]\n",
+    "})\n",
+    "\n",
+    "sns.scatterplot(x='Sales', y='Profit', data=data, color='red', s=100)\n",
+    "plt.title('Sales vs Profit')\n",
+    "plt.show()\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Best Practices\n",
+    "- Label axes और title हमेशा add करें\n",
+    "- Legends और colors use करें ताकि plots readable हों\n",
+    "- seaborn → complex statistical plots easily बनाता है\n",
+    "- Large datasets → aggregation या sampling करें\n",
+    "- plt.savefig() → plots save करने के लिए"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### अभ्यास प्रश्न\n",
+    "1. matplotlib से daily sales line plot बनाएं।\n",
+    "2. seaborn से bar chart बनाएं और colors customize करें।\n",
+    "3. scatter plot बनाएं और trend observe करें।\n",
+    "4. CSV से data load करें और plots बनाएं।\n",
+    "5. Multiple subplots में sales और profit दिखाएँ।"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### सीखने योग्य बातें\n",
+    "- Data visualization basics\n",
+    "- matplotlib → customizable low-level plots\n",
+    "- seaborn → high-level statistical plots\n",
+    "- Trends, patterns और insights जल्दी समझना"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "🔔 **अगला अध्याय:** \"Python और Machine Learning – scikit-learn basics\""
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.12.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
