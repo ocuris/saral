@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python सीखें – अध्याय 1</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #202124;
+    }
+    header p {
+      font-size: 16px;
+      color: #5f6368;
+    }
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    iframe {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+    }
+    .actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .colab-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #4285F4;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+    .colab-btn:hover {
+      background-color: #3367d6;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📘 Python सीखें – अध्याय 1</h1>
+    <p>पायथन से मुलाक़ात – इंटरैक्टिव नोटबुक</p>
+  </header>
+
+  <div class="container">
+    <!-- Notebook preview via nbviewer -->
+    <iframe id="notebookFrame"
+      src="https://nbviewer.org/github/ocuris/saral/blob/main/chapter-01/hi.ipynb">
+    </iframe>
+
+    <!-- Actions -->
+    <div class="actions">
+      <a class="colab-btn"
+         href="https://colab.research.google.com/github/ocuris/saral/blob/main/chapter-01/hi.ipynb"
+         target="_blank">
+        🚀 Open in Google Colab
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Saral Python Learning | Built with ❤️ for learners
+  </footer>
+
+  <script>
+    // Auto-resize iframe based on content
+    const iframe = document.getElementById("notebookFrame");
+    iframe.onload = function() {
+      try {
+        const doc = iframe.contentWindow.document;
+        iframe.style.height = doc.body.scrollHeight + "px";
+      } catch (e) {
+        // Cross-origin if nbviewer prevents resizing
+        iframe.style.height = "800px"; // fallback
+      }
+    };
+  </script>
+</body>
+</html>
